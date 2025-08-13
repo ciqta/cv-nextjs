@@ -5,7 +5,7 @@ export default function Home() {
     <main className={styles.container}>
       {/* Header CV */}
       <header className={styles.header}>
-        <img src="/akid.jpg" alt="Profile" className={styles.photo} />
+        <Image src="/akid.jpg" alt="Profile" className={styles.photo} />
         <div>
           <h1 className={styles.name}>Ciqta Audika</h1>
           <p className={styles.role}>Junior FrontEnd Developer</p>
