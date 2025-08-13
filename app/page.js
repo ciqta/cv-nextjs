@@ -1,95 +1,83 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import styles from '../styles/CV.module.css';
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>app/page.js</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <main className={styles.container}>
+      {/* Header CV */}
+      <header className={styles.header}>
+        <img src="/akid.jpg" alt="Profile" className={styles.photo} />
+        <div>
+          <h1 className={styles.name}>Ciqta Audika</h1>
+          <p className={styles.role}>Junior FrontEnd Developer</p>
 
-        <div className={styles.ctas}>
+          {/* Tombol Link PDF */}
           <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+            href="https://drive.google.com/file/d/1B6sjTcszAZpGoEIa9wwnr2-R2tjd-LCJ/view?usp=drive_link"
             target="_blank"
             rel="noopener noreferrer"
+            className={styles.cvButton}
           >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
+            📄 Full CV and Portofolio (PDF)
           </a>
         </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      </header>
+
+      {/* About Me */}
+      <section className={styles.section}>
+        <h2>About Me</h2>
+        <p>
+          I am a student at Taruna Bhakti School in Depok with a passion for building clean,
+          responsive, and user-friendly web interfaces. I have experience in HTML, CSS, and JavaScript, And Laravel
+          and I'm continuously learning more about modern frontend frameworks like React and Next.js.
+        </p>
+      </section>
+
+      {/* Skills */}
+      <section className={styles.section}>
+        <h2> Hard Skills</h2>
+        <ul>
+          <li>HTML,CSS</li>
+          <li>Javascript</li>
+          <li>Laravel</li>
+          <li>Mobile Design</li>
+          <li>UI/UX Design</li>
+        </ul>
+      </section>
+
+      {/* Experience */}
+      <section className={styles.section}>
+        <h2>Soft Skills</h2>
+        <ul>
+          <li>Teamwork</li>
+          <li>Time Development</li>
+          <li>Public Speaking</li>
+          <li>Adaptability</li>
+          <li>Presentation</li>
+        </ul>
+      </section>
+
+      {/* Education */}
+      <section className={styles.section}>
+        <h2>Education</h2>
+        <p><strong>Taruna Bhakti Vocational High School</strong> – Software Engineering (2023 - Present)</p>
+      </section>
+
+      {/* Projects */}
+      <section className={styles.section}>
+        <h2>Projects</h2>
+        <p><strong>Story Horror Game</strong> – My team made a horror game called
+Mystery Goa Ngawi for the final
+semester assignment.</p>
+        <p><strong>School Management App</strong> – Created a web-based app for managing school payments and student data.</p>
+        <p><strong>Digital Library</strong> – I created the UI/UX of a digital
+library, and I combined concepts
+and references between real
+and digital books, so that
+readers can experience the
+reality of reading a physical book
+in digital pages.
+semester assignment.</p>
+      </section>
+    </main>
   );
 }

@@ -1,0 +1,100 @@
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 40px;
+  background: linear-gradient(145deg, #ffffff, #f9fafc); /* Gradient halus */
+  border: 1px solid #e3e8ef;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.container {
+  border-left: 6px solid #3b82f6; /* Biru elegan */
+}
+.container {
+  box-shadow: 0 0 10px rgba(59, 130, 246, 0.1);
+}
+
+
+.container:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12); /* Hover efek melayang */
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header img {
+  width: 130px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.name {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.role {
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+}
+
+.about {
+  margin-top: 20px;
+}
+
+.about h2, .section h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.about p {
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.section-title {
+  border-bottom: 2px solid #e3e8ef;
+  padding-bottom: 6px;
+  margin-bottom: 20px;
+  color: #1f2937;
+  font-weight: 600;
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+.section ul {
+  padding-left: 20px;
+}
+
+.section li {
+  margin-bottom: 5px;
+}
+
+.project {
+  margin-bottom: 15px;
+}
+
+.project h3 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.project p {
+  line-height: 1.5;
+}
