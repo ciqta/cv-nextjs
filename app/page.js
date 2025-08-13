@@ -1,11 +1,16 @@
 import styles from '../styles/CV.module.css';
+import Image from 'next/image';
 
 export default function Home() {
   return (
     <main className={styles.container}>
       {/* Header CV */}
       <header className={styles.header}>
-        <Image src="/akid.jpg" alt="Profile" className={styles.photo} />
+        <Image src="/akid.jpg" alt="Profile" width={120} height={120} />
+
+        
+
+        
         <div>
           <h1 className={styles.name}>Ciqta Audika</h1>
           <p className={styles.role}>Junior FrontEnd Developer</p>
@@ -26,9 +31,9 @@ export default function Home() {
       <section className={styles.section}>
         <h2>About Me</h2>
         <p>
-          I am a student at Taruna Bhakti School in Depok with a passion for building clean,
+          I&apos;m a student at Taruna Bhakti School in Depok with a passion for building clean,
           responsive, and user-friendly web interfaces. I have experience in HTML, CSS, and JavaScript, And Laravel
-          and I'm continuously learning more about modern frontend frameworks like React and Next.js.
+          and I am continuously learning more about modern frontend frameworks like React and Next.js.
         </p>
       </section>
 

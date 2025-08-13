@@ -16,13 +16,7 @@
   padding-bottom: 20px;
 }
 
-.photo {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid #3b82f6;
-}
+
 
 .name {
   font-size: 28px;
